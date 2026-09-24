@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.~lock.*
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+envs/
+
+# Jupyter checkpoints already covered
+**/.ipynb_checkpoints/
+
+# Large local-only dumps (keep out if re-added)
+*.zip
+MasterCOpy/
+bash_pdb/
+PyMOL*/
+Trial/
+
+# Secrets / local paths
+.env

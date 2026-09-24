@@ -1,0 +1,20 @@
+#!/bin/bash
+
+SOURCE_DIR="/mnt/e/NewProject/refined-set"
+DEST_DIR="/mnt/e/NewProject/refined_kinase_data"
+PDB_LIST="/mnt/e/NewProject/PDB_code.txt"
+
+# Create destination directory if it doesn't exist
+mkdir -p "$DEST_DIR"
+
+# Read each PDB ID from the file and move matching folders
+while IFS= read -r PDB_ID; do
+    if [ -d "$SOURCE_DIR/$PDB_ID" ]; then
+        mv "$SOURCE_DIR/$PDB_ID" "$DEST_DIR/"
+        echo "Moved folder: $PDB_ID"
+    else
+        echo "Folder not found: $PDB_ID"
+    fi
+done < "$PDB_LIST"
+
+echo "Done!"

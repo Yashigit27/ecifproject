@@ -1,0 +1,16 @@
+# Core
+numpy
+pandas
+scipy
+scikit-learn
+xgboost
+matplotlib
+jupyter
+notebook
+
+# Cheminformatics (prefer conda-forge for RDKit)
+# conda install -c conda-forge rdkit
+rdkit
+
+# Optional (if loading saved models / notebooks need them)
+joblib
