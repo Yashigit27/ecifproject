@@ -1,0 +1,10 @@
+metric,value
+n_train_seqs,2330.0
+n_ext_seqs,5238.0
+n_clusters_train,294.0
+n_clusters_ext,1004.0
+n_shared_clusters,150.0
+n_only_ext_clusters,854.0
+ext_in_shared_clusters,1114.0
+ext_in_novel_clusters,4124.0
+pct_ext_in_shared_clusters,21.3
